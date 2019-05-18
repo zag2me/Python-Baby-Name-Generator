@@ -18,8 +18,13 @@ def randomize_list(myList):
 ################
 
 # Read the text file
-x = process_textfile('baby_names.txt')
+boyNames = process_textfile('boy_names.txt')
+girlNames = process_textfile('girl_names.txt')
+
 # Ranomize the list
-finalName = randomize_list(x)
-# Print the final random name
-print (finalName)
+finalBoyName = randomize_list(boyNames)
+finalGirlName = randomize_list(girlNames)
+
+# Print the final random names
+print ("Selected Boy Name:",finalBoyName)
+print ("Selected Girl Name:",finalGirlName)
